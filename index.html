@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diplom</title>
 </head>
-<body>  
-<link rel="stylesheet" href="css/style.css">
-<meta charset="utf-8">
+<body>
 <header class="header">
   <div class="container">
     <div class="header-nav">
@@ -292,6 +291,37 @@
         <a class="copyright" href="#0">Copyright © 2009–2016 City Blog LLC.</a>
       </div>
     </footer>
+      <div class="container__popup">
+<div class="popup">
+  <form class="form">
+    <div class="form__group">
+      <label class="select-group">
+        <h3 class="popup__title">ваш фидбек</h3>
+        <span class="select-label">Как часто вы заходите на сайт?</span>
+        <select class="select">
+          <option value="almost every day" selected>Почти каждый день</option>
+          <option value="once a week">Раз в неделю</option>
+          <option value="rarely">Редко</option>
+        </select>
+      </label>
+    </div>  
+        <div class="form-group">
+      <label class="checkbox-group">
+        <span class="checkbox-text">Вы подписаны на e-mail рассылку?</span>
+         <input type="checkbox" class="checkbox" required>
+         <input type="checkbox" class="checkbox" required>
+      </label>
+    </div>
+    <div class="form__text">
+      <label class="text__group">
+        <span class="span__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <input type="field__text" name="text" placeholder="Может, больше рецептов?">
+      </label> 
+    </div>
+    <button class="button__popup">отправить</button>
+  </form>
+</div>
+</div>
   </body>
 </html> 
 
