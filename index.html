@@ -7,7 +7,7 @@
   <title>Diplom</title>
 </head>
 <body>
-<header class="header">
+<header id="header" class="header">
   <div class="container">
     <div class="header-nav">
       <a href="/">
@@ -80,6 +80,7 @@
 <div class="content">
   <div class="content-wrapper">
 <main class="content-main">
+  <div class="content-main-news">
     <article class="news">
    <img 
     class="news-photo"
@@ -186,6 +187,7 @@
         </div>
       </div>
         </article>
+        </div>
    </main>
 <aside class="content-aside">
   <section class="section-content-posts">
@@ -341,9 +343,9 @@
     </footer>
       <div class="container__popup">
 <div class="popup">
-  <button class="popup-close" type="button">
+  <batton class="popup-close">
     <span class="popup-close-text">Закрыть окно</span>
-  </button>
+  </batton>
   <form class="form">
     <div class="form__group">
       <label class="select-group">
@@ -356,11 +358,19 @@
         </select>
       </label>
     </div>  
+        <div class="checkbox-form-group">
+      <label class="checkbox-form">
+        <span class="checkbox-text-form">Вы подписаны на e-mail рассылку?</span>
         <div class="form-group">
-      <label class="checkbox-group">
-        <span class="checkbox-text">Вы подписаны на e-mail рассылку?</span>
+        <label class="checkbox-group">
          <input type="checkbox" class="checkbox" required>
+         <span class="checkbox-text">Да</span>
+         </label>
+        <label class="checkbox-group">
          <input type="checkbox" class="checkbox" required>
+         <span class="checkbox-text">Нет</span>
+         </label>
+         </div>
       </label>
     </div>
     <div class="form__text">
