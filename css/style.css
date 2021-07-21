@@ -669,23 +669,24 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  #position: fixed;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  #justify-content: center;
-  #border: 3px solid black;
-  #background-color: #000 rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .popup {
-  height: 100%;
   display: flex;
-  #justify-content: center;
-  #border: 3px solid black;
   position: relative;
-  #background-color: #000 rgba(0, 0, 0, 0.8);
   z-index: 2;
+  background-color: #fff;
+  max-width: 340px;
 }
 
 .container__popup::after {
@@ -717,9 +718,32 @@
   height: 3px;
   background-color: #b59f5b;
   opacity: 0.4;
-  bottom: -1845px;
-  right: 734px;
+  top: 65px;
+  right: 142px;
   
+}
+
+.popup-close {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -36px;
+  right: 1px;
+  background-image: url("../svg/form-x.svg");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.popup-close-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px 1px 1px 1px);
 }
 
 .select-label {
