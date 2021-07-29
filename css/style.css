@@ -133,7 +133,7 @@
   background-color: #b59f5b;
   opacity: 0.4;
   top: 30px;
-  right:726px;
+  #right:726px;
 }
 
 
@@ -604,7 +604,6 @@
   background-color: #b59f5b;
   opacity: 0.4;
   top: 30px;
-  right:570px;
 }
 
 .goods-body {
@@ -990,6 +989,10 @@ input[type="field__text"] {
   width: 100%;
  }
 
+ .container {
+  width: 100%;
+ }
+
  .trends-container {
   display: flex;
   flex-wrap: wrap;
@@ -1014,7 +1017,6 @@ input[type="field__text"] {
   width: 98%;
   margin-bottom: 5px;
  }
-}
 
  .goods-body {
   display: flex;
@@ -1033,29 +1035,54 @@ input[type="field__text"] {
   background-image: url(../images/banner-bg-tablet.jpg);
   width: 100%;
  }
+
+ .container {
+  width: 100%;
+ }
+
+  .header-title {
+  font-size: 40px;
+  width: 100%;
+  padding: 125px 45px;
+ }
+
   .trends-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
  }
 
  .trends-interior {
-  width: 48%;
+  width: 49.7%;
   margin-bottom: 5px;
  }
 
  .trends-food {
-  width: 48%;
+  width: 49.7%;
   margin-bottom: 5px;
  }
 
  .trends-travel {
-  width: 48%;
+  width: 49.7%;
   margin-bottom: 5px;
  }
 
  .trends-health {
-  width: 48%;
+  width: 49.7%;
   margin-bottom: 5px;
+ }
+
+ .goods-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: ;
+ }
+
+ .goods-card {
+  width: 40%;
+
  }
 }
 
@@ -1064,9 +1091,28 @@ input[type="field__text"] {
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
 
+ .container {
+  width: 100%;
+ }
+
+  .header-title{
+  font-size: 40px;
+  width: 100%;
+  padding: 125px 45px;
+ }
+
+  .post-title-trends { 
+  justify-content: center;
+  align-items: center;
+ }
+
  .trends-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
  }
 
  .trends-interior {
@@ -1087,6 +1133,10 @@ input[type="field__text"] {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
+
+ .container {
+  width: 100%;
+ }
 
  .trends-container {
   display: flex;
